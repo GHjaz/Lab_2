@@ -7,7 +7,6 @@ class Unit
 {
 
 public:
-
     using Flags = unsigned int;
 
 public:
@@ -16,8 +15,8 @@ public:
         throw std::runtime_error("Not supported");
     }
     virtual std::string compile(unsigned int level = 0) const = 0;
-protected:
 
+protected:
     virtual std::string generateShift(unsigned int level) const {
         static const auto DEFAULT_SHIFT = " ";
         std::string result;

@@ -7,7 +7,8 @@ class MyClass {
 
 public:
 
- void testFunc1() {}
+ void testFunc1() {
+ }
  virtual void testFunc3() const {}
 
 protected:
